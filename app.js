@@ -109,6 +109,7 @@ try {
     process.env.MONGODB_URI ||
     `mongodb+srv://indraghosha2it_hanjin_db_user:JfOeeYYVMhKBSUbL@cluster0.1ysqyt8.mongodb.net/hanjin?appName=Cluster0`;
 
+    
   mongoose.set("strictQuery", false);
   mongoose.set("bufferCommands", false);
   mongoose.set("bufferTimeoutMS", 10000);
