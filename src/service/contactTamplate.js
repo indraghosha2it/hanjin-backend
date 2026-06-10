@@ -214,7 +214,7 @@ router.post('/contact', async (req, res) => {
     console.log('  To:', formData.email);
     
     const customerInfo = await transporter.sendMail({
-      from: `"Samudera Cargo Logistics Support" <${process.env.SMTP_USER_INFO}>`,
+      from: `"Hanjin Shipping-Thailand Support" <${process.env.SMTP_USER_INFO}>`,
       to: formData.email,
       subject: `We received your message - ${contactId}`,
       html: getCustomerEmailTemplate(formData, contactId)
