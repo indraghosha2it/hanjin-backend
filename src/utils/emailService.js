@@ -1,8 +1,6 @@
 // utils/emailService.js
-
 const nodemailer = require('nodemailer');
 const path = require('path');
-
 // Create transporter for Hostinger
 const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
