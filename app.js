@@ -28,8 +28,6 @@ const isAllowedOrigin = (origin) => {
   if (allowedOrigins.includes(origin)) {
     return true;
   }
-
-  // Allow Vercel preview/prod domains and the production custom domains.
   if (/^https:\/\/[a-z0-9-]+\.vercel\.app$/i.test(origin)) {
     return true;
   }
