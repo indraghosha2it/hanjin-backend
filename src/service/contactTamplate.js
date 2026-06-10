@@ -141,7 +141,7 @@ const getCustomerEmailTemplate = (data, contactId) => {
           </p>
         </div>
         <div class="footer">
-          <p>© ${new Date().getFullYear()} Samudera Cargo Logistics. All rights reserved.</p>
+          <p>© ${new Date().getFullYear()} Hanjin Shipping-Thailand. All rights reserved.</p>
         </div>
       </div>
     </body>
@@ -200,7 +200,7 @@ router.post('/contact', async (req, res) => {
     console.log('  To:', process.env.ADMIN_EMAIL || process.env.SMTP_USER_INFO);
     
     const adminInfo = await transporter.sendMail({
-      from: `"Samudera Cargo Logistics Contact" <${process.env.SMTP_USER_INFO}>`,
+      from: `"Hanjin Shipping-Thailand Contact" <${process.env.SMTP_USER_INFO}>`,
       to: process.env.ADMIN_EMAIL || process.env.SMTP_USER_INFO,
       replyTo: formData.email,
       subject: `📬 New Contact Form - ${contactId} - ${formData.inquiryType}`,
