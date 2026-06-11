@@ -17,7 +17,7 @@ const allowedOrigins = [
   "http://localhost:3000",
   "http://localhost:8000",
   "https://samudera-cargo-server.vercel.app",
-  "https://grand-dusk-bb4780.netlify.app",
+ "https://lustrous-malabi-be4b97.netlify.app"
 ];
 
 const isAllowedOrigin = (origin) => {
